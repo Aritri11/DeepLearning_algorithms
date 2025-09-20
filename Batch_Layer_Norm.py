@@ -1,8 +1,8 @@
+################################### Batch and Layer Normalization from Scratch ##########################################
+
 import numpy as np
 
-# -------------------------
 # Utilities
-# -------------------------
 def relu(x):
     return np.maximum(0, x)
 
@@ -14,9 +14,8 @@ def mse_loss(y_pred, y_true):
     dloss = 2 * (y_pred - y_true) / y_true.size
     return loss, dloss
 
-# -------------------------
+
 # Batch Normalization (FC / vector)
-# -------------------------
 class BatchNorm:
     """
     Batch Normalization for 2D inputs X: shape (N, D)
@@ -89,9 +88,8 @@ class BatchNorm:
 
         return dx, dgamma, dbeta
 
-# -------------------------
 # Layer Normalization
-# -------------------------
+
 class LayerNorm:
     """
     Layer Normalization for 2D inputs X: shape (N, D)
@@ -145,9 +143,8 @@ class LayerNorm:
         dx = (1.0 / D) * (1.0 / std) * (D * dx_hat - sum_dxhat - x_hat * sum_dxhat_xhat)
         return dx, dgamma, dbeta
 
-# -------------------------
+
 # Demo / Example usage
-# -------------------------
 def demo_normalizers():
     # Toy dataset: 4 samples, 3 features
     X = np.array([
