@@ -1,3 +1,5 @@
+##################################### CNN (Convolution operation, padding & max pooling operation) from Scratch ##################################
+
 import numpy as np
 
 def apply_padding(matrix, padding_size=1):
