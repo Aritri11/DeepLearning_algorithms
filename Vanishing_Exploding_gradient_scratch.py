@@ -1,3 +1,5 @@
+##############################################  Simulation of vanishing & exploding gradient problems ########################################### 
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
