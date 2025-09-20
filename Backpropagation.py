@@ -1,4 +1,4 @@
-
+#################################### Backpropagation for ANN from Scratch #############################################
 
 import numpy as np
 #ReLU Function
