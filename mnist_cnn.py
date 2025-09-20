@@ -1,3 +1,5 @@
+###############################  Implementation of a MNIST classifier using CNN PyTorch library ################################
+
 import torch
 from torch import nn
 import torchvision
