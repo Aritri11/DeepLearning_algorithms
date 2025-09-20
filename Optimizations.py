@@ -1,3 +1,5 @@
+#################### Implementation of various update rules used to optimize the neural network (SGD, Momentum, AdaGrad, RMSProp) ########################
+
 import torch
 
 # Base Optimizer class
