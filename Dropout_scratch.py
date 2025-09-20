@@ -1,3 +1,5 @@
+############################### Implementation of Dropout from scratch ##################################
+
 import numpy as np
 class Dropout:
     def __init__(self, p=0.3):
