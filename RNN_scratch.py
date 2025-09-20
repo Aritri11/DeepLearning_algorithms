@@ -1,3 +1,5 @@
+################################### Implementation of vanilla RNN from scratch ######################################
+
 import numpy as np
 
 class VanillaRNN:
