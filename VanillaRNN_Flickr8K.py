@@ -1,3 +1,6 @@
+########################################## VanillaRNN used to generation caption from Flickr4K dataset ###############################################3
+
+
 import os
 import pandas as pd
 import torch
@@ -18,7 +21,7 @@ captions_file = os.path.join(data_location, "captions.txt")
 
 embed_size = 256
 hidden_size = 512
-num_epochs = 6         # for demo, increase later
+num_epochs = 6 
 batch_size = 32
 learning_rate = 1e-3
 max_len = 20
